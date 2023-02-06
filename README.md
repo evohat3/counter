@@ -23,7 +23,7 @@ Html, Css and Javascript
 
 * added visual hover elements to all the buttons
 
-![Screenshot 1.1](./Assets/1.1.png)
+![Screenshot 1.1](./assets/1.1.png)
 
 
 **************************************************************
