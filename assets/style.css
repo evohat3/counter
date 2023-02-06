@@ -1,3 +1,24 @@
+:root {
+    --teal: rgb(3, 255, 255);
+    --black: rgb(0, 0, 0);
+    --white: white;
+}
+
+button {
+    display: table-row;
+    background-color: var(--teal);
+    border: 5px solid var(--black);
+    outline: 2px solid var(--white);
+    border-radius: 25%;
+    min-height: 50px;
+    color: var(--black);
+    box-shadow: 5px 10px var(--white);
+    width: 10%;
+    margin: 40px auto;
+    transition: all 0.1s ease-in-out;
+    transform: scale(.9);
+}
+
 #countLabel{
     display: block;
     text-align: center;
@@ -6,33 +27,97 @@
 
 }
 
-#resetBtn{
-    width: 10%;
-    margin: 40px auto;
-    border: 5px solid rgb(3, 255, 255);
-    box-shadow: 5px 10px rgb(2, 129, 129);
-    background-color: rgb(3, 255, 255);
-    color: rgb(0, 0, 0);
+#resetBtn:hover {
+    transform: scale(1.1);
+    z-index: 2;
+    position: relative;
+    animation-name: my-animation;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
-#decreaseBtn{
-    width: 10%;
-    margin: 40px auto;
-    border: 5px solid rgb(3, 255, 255);
-    box-shadow: 5px 10px rgb(2, 129, 129);
-    background-color: rgb(3, 255, 255);
-    color: rgb(0, 0, 0);
+#decreaseBtn10:hover {
+  transform: scale(1.1);
+  z-index: 2;
+  position: relative;
+  animation-name: my-animation;
+  animation-duration: 1s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
-#increaseBtn{
-    width: 10%;
-    margin: 40px auto;
-    border: 5px solid rgb(3, 255, 255);
-    box-shadow: 5px 10px rgb(2, 129, 129);
-    background-color: rgb(3, 255, 255);
-    color: rgb(0, 0, 0);
+#decreaseBtn5:hover {
+  transform: scale(1.1);
+  z-index: 2;
+  position: relative;
+  animation-name: my-animation;
+  animation-duration: 1s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+#decreaseBtn:hover {
+    transform: scale(1.1);
+    z-index: 2;
+    position: relative;
+    animation-name: my-animation;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#increaseBtn:hover {
+    transform: scale(1.1);
+    z-index: 2;
+    position: relative;
+    animation-name: my-animation;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#increaseBtn5:hover {
+  transform: scale(1.1);
+  z-index: 2;
+  position: relative;
+  animation-name: my-animation;
+  animation-duration: 1s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+#increaseBtn10:hover {
+  transform: scale(1.1);
+  z-index: 2;
+  position: relative;
+  animation-name: my-animation;
+  animation-duration: 1s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 html {
     background-color: #000000;
+}
+
+  @keyframes my-animation {
+    from {
+      background-color: #128d22;
+    }
+    to {
+      background-color: hsl(36, 91%, 39%);
+    }
+}
+  @media (max-width: 767px) {
+    .grid {
+      grid-template-columns: repeat(1, 1fr);
   }
+}
